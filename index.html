@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sentiment Analysis App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+</head>
+<body>
+    <div class="container">
+        <form method="POST">
+            <h2>Enter comment</h2>
+            <input type="text" name="comment" id="comment" placeholder="Add a comment" value="{{ comment }}"><br><br>
+            <button type="submit">Predict Sentiment</button><br><br>
+            <h2>Sentiment</h2>
+            <input type="text" id="sentiment" placeholder="Positive Neural Negtive" value="{{ sentiment }}" readonly><br><br>
+            <h2>Probability</h2>
+            <input type="text" id="Probability" placeholder="Probability" value="{{ probability }}" readonly>
+        </form>
+    </div>
+</body>
+</html>

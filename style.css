@@ -1,0 +1,61 @@
+/* Apply a modern, clean font */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: url(https://intellisensesolutions.com/img/service/thumbnail_senti.jpg) no-repeat center center/cover;
+    backdrop-filter: blur(4px);
+}
+
+/* Glassmorphism card container */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(16px);
+    border-radius: 20px;
+    padding: 30px 40px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Headings */
+h2 {
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+/* Inputs */
+input[type="text"] {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-radius: 25px;
+    background-color: #00ffe0;
+    color: #004d00;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #00ccb3;
+    transform: scale(1.05);
+}
